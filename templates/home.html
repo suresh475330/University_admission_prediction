@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+
+    <h1 class="title">University admission prediction system</h1>
+
+    <div class="background">
+
+        <p>oii</p>
+    </div>
+
+    <!-- <img src="../static/university.jpg" alt="image" > -->
+
+
+    <form action="result" method="post" enctype="application/x-www-form-urlencoded">
+
+        <h2>Enter your details and get probability of your admission</h2>
+
+        <label for="GRE">Enter GRE Score</label>
+        <input type="number" name="GRE" placeholder="GRE score" ></input>
+
+        <br>
+
+        <label for="TOEFL">Enter TOEFL Score</label>
+        <input type="number" name="TOEFL" placeholder="TOEFL score" ></input>
+
+        <br>
+
+        <label for="universityNo">Select University No</label>
+
+        <select name="universityNo" id="universityNo">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <br>
+
+        <label for="SOP">Enter SOP</label>
+        <input type="number" name="SOP" placeholder="SOP score" ></input>
+
+        <br>
+
+        <label for="LOR">Enter LOR</label>
+        <input type="number" name="LOR" placeholder="LOP score" ></input>
+
+        <br>
+
+        <label for="CGPA">Enter CGPA</label>
+        <input type="number" name="CGPA" placeholder="GRE score" ></input>
+
+        <br>
+
+        <label for="research">Research Status</label>
+
+        <select name="research" id="research">
+            <option value="1">Research</option>
+            <option value="0">No Research</option>
+        </select>
+
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>

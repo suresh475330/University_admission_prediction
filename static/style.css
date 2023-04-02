@@ -1,0 +1,10 @@
+.title{
+    color: brown;
+}
+.background{
+    background-image: url('./university.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height:100vh;
+    background-color: cadetblue;
+}
