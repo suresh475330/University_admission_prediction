@@ -8,17 +8,21 @@ model = pickle.load(open('./mlTraining/university.pkl','rb'))
 def index():
     return render_template('home.html')
 
+@app.route('/predictionForm',methods=['GET'])
+def predictionForm():
+    return render_template('form.html')
+
 
 
 @app.route('/result',methods=['POST'])
 def result():
     
-    min = [290.0, 92.0, 1.0, 1.0, 1.0, 6.8, 0.0]
-    max = [340.0, 120.0, 5.0, 5.0, 5.0, 9.92, 1.0]
 
     # userData = [337,118,4,4.5,4.5,9.65,1]  # This values have chance
     # userData = [220,50,2,1,3,8,0]  # This values don't have chance
 
+    min = [290.0, 92.0, 1.0, 1.0, 1.0, 6.8, 0.0]
+    max = [340.0, 120.0, 5.0, 5.0, 5.0, 9.92, 1.0]
 
     k = [float(x) for x in request.form.values()]
     p = []
@@ -39,4 +43,4 @@ def result():
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

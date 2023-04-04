@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result</title>
+    <title>University admission prediction system</title>
+    <link rel="stylesheet" href="../static/style/result.css">
 </head>
+
 <body>
 
-    <h1>{{ prediction_text }}</h1>
-    
+    <div class="container">
+        
+        <div class="result-box">
+            <h2 class="result-title">Admission Prediction</h2>
+            <div class="result-content">
+            <p>Based on your academic performance and extracurricular activities and scores, our prediction algorithm estimates
+                your chances of being admitted to our university.</p>
+            <div class="prediction-result">
+                <h3 class="prediction-title">Prediction Result :</h3>
+                <p class="prediction-value">{{ prediction_text }}</p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
+
 </html>
